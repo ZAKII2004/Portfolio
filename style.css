@@ -1,0 +1,63 @@
+@font-face{
+    src: url(/fonts/AveresTitle-Regular.otf);
+    font-family: averes;
+}
+*{ 
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+.banner{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    z-index: -99;
+}
+.text {
+    color: #fff;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    margin: 15rem;
+    
+}
+.text h1 {
+    text-align: center;
+    display : block ;
+    font-size: 5rem;
+    font-weight: 40rem;
+    letter-spacing: 1.5rem;
+    animation-name: movebottom ;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+}
+@keyframes movebottom {
+    0% {
+      opacity: 0;
+      transform: translateY(-3rem); } }
+  
+  100% {
+    opacity: 1;
+    transform: translateY(0); }
+.text .main-btn{
+    margin-left: 45px;
+    animation-name: movebottom ;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+.btn{
+    margin-left:25px ;
+    font-family: 'Lato', sans-serif;
+    position: relative;
+    display: inline-block;
+    margin-top: 5px;
+    padding : 10px 60px ;  
+    background: rgba(255,255,255,0.1);
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    text-decoration: none;}
+.btn:hover{
+    background: #fff;
+    color: #000;
+}
